@@ -1,0 +1,206 @@
+html {
+  scroll-behavior: smooth; /* Sanfte Übergänge zwischen Menüabschnitten */
+}
+
+body {
+  margin: 0; /*Entfernt den äußeren Rand vom Seitenrand des Body*/
+  background-image: url(./img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Stilisierung von Überschrift */
+h1 {
+  font-family: "Raleway", sans-serif;
+  color: azure;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 37px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: gray;
+}
+
+/*Stilisierung von Texten, Listen */
+p,
+li {
+  font-family: "Raleway", sans-serif;
+  font-size: 14.5px;
+}
+
+/* Einige Textbereiche anders formatieren */
+span {
+  font-weight: bold;
+}
+
+/*Stilisierung von footer */
+footer {
+  background: rgb(66, 150, 226);
+  background: linear-gradient(
+    180deg,
+    rgba(66, 150, 226, 1) 0%,
+    rgba(241, 253, 45, 0.9444152661064426) 100%
+  );
+  width: 100%;
+  height: auto;
+  position: fixed; /* Fixiert den Header unten im Fenster */
+  bottom: 0px;
+}
+
+.header {
+  background-image: url(./img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed; /* Fixiert den Header oben im Fenster */
+  width: 100%;
+  height: 125px;
+}
+
+/* Navigation*/
+.menu {
+  padding: 5px;
+  position: fixed;
+  top: 85px;
+  right: 0;
+  left: 0;
+}
+
+.menu a {
+  float: left;
+  font-family: "Raleway", sans-serif;
+  color: azure;
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+/* Der Link ändert seine Farbe wenn der Cursor darüber bewegt wird*/
+.menu a:hover,
+.mehr-info-link a:hover {
+  color: black;
+}
+
+/* Abschnitt "Willkommen in der Ukraine!" */
+.willkommen {
+  padding: 130px 20px 30px 20px; /*Setzt die Innenabstände für den Abschnitt */
+  scroll-margin-top: 130px; /* Margin für die Navigation durch Abschnitten 
+  unter Berücksichtigung der Höhe des fixed header*/
+}
+
+.willkommen img {
+  border-radius: 10px; /* Rundet die Ecken des Bildes ab */
+  width: 600px;
+  float: right; /* Umläuft den Text rechts */
+  margin-left: 30px;
+}
+
+.content {
+  height: 287px;
+  text-align: justify; /* Zentriert den Text und behebt Wortumbrüche */
+}
+
+/* Abschnitt "Küche" */
+.essen {
+  padding: 10px 20px 30px 20px;
+  margin-top: 10px;
+  scroll-margin-top: 130px;
+}
+
+.essen img {
+  border-radius: 10px;
+  width: 600px;
+  height: 287px;
+  float: left;
+  margin-right: 30px;
+}
+
+/* Abschnitt "Reisen" */
+.reisen {
+  padding: 10px 20px 30px 20px;
+  margin-top: 10px;
+  scroll-margin-top: 130px;
+}
+
+/*Stilisierung von iframe */
+.reisen iframe {
+  border-radius: 10px;
+  width: 600px;
+  height: 287px;
+  float: right;
+  margin-left: 30px;
+}
+
+/* Abschnitt "Fakten" */
+.fakten {
+  padding: 10px 20px 30px 20px;
+  margin-top: 10px;
+  scroll-margin-top: 130px;
+}
+
+.fakten img {
+  border-radius: 10px;
+  width: 600px;
+  height: 287px;
+  float: left;
+  margin-right: 30px;
+}
+
+/* Abschnitt "Ukraine im Herzen" */
+.ich {
+  padding: 10px 20px 30px 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  scroll-margin-top: 130px;
+}
+
+.ich img {
+  border-radius: 10px;
+  width: 600px;
+  height: 287px;
+  float: right;
+  margin-left: 30px;
+}
+
+/* Link "Mehr über die Ukraine erfahren" */
+.mehr-info-link {
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  background: rgb(66, 150, 226);
+  background: linear-gradient(
+    180deg,
+    rgba(66, 150, 226, 1) 0%,
+    rgba(241, 253, 45, 0.9444152661064426) 100%
+  );
+  padding: 5px;
+}
+
+.mehr-info-link a {
+  font-family: "Raleway", sans-serif;
+  color: azure;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Footer */
+footer p {
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+/*Stilisierung von timer */
+.timer {
+  float: right;
+}
+
+.timer span {
+  font-size: 18px;
+}
